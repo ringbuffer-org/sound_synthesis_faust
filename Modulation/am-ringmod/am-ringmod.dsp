@@ -1,6 +1,11 @@
 // am-ringmod.dsp
 //
+// Example for amplitude modulation 
+// and ringmodulation.
 //
+// - steady sound
+// - adjustable frequencies
+// - fader for morphing between am/ringmod
 //
 // Henrik von Coler
 // 2020-05-11

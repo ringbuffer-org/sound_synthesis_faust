@@ -1,6 +1,10 @@
 // fm-simple.dsp
 //
+// 2-operator FM synthesis
 //
+// - with trigger
+// - dynamic modulation index 
+//   through temporal envelope
 //
 // Henrik von Coler
 // 2020-05-11
