@@ -17,10 +17,10 @@ import("stdfaust.lib");
 // Control Parameters
 //////////////////////////////////////////////////////////////////////////
 
-cutoff         = hslider("Cutoff", 100, 5, 6000, 0.001):si.smoo;
-f0                = hslider("Pitch", 100, 5, 16000, 0.001):si.smoo;
-q                 = hslider("Q", 1, 0.1, 5, 0.01):si.smoo;               
-gain            = hslider("Gain", 1, 0, 1, 0.01):si.smoo;
+cutoff         = hslider("Cutoff [midi:ctrl 48]", 100, 5, 6000, 0.001):si.smoo;
+f0                = hslider("Pitch[midi:ctrl 49]", 100, 5, 500, 0.001):si.smoo;
+q                 = hslider("Q[midi:ctrl 50]", 1, 0.1, 100, 0.01):si.smoo;               
+gain            = hslider("Gain[midi:ctrl 51]", 1, 0, 1, 0.01):si.smoo;
 
 //////////////////////////////////////////////////////////////////////////
 // Define three 'module' functions 
