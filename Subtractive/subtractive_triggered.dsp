@@ -10,10 +10,10 @@
 
 import("stdfaust.lib");
  
-trigger0 =  button("trigger0 [midi:key 33]");
-trigger1=  button("trigger1 [midi:key 34]");
-trigger2=  button("trigger2 [midi:key 35]");
-trigger3=  button("trigger3 [midi:key 36]");
+trigger0 =  button("trigger0 [midi:key 0]");
+trigger1=  button("trigger1 [midi:key 1]");
+trigger2=  button("trigger2 [midi:key 2]");
+trigger3=  button("trigger3 [midi:key 3]");
 
 //////////////////////////////////////////////////////////////////////////
 // Define three 'module' functions 
