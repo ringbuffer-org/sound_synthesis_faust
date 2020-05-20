@@ -1,11 +1,4 @@
-// midi-example.dsp
-//
-// Control a square wave oscillator with a MIDI controller.
-//
-// Compile with: faust2xxxx -midi -nvoices 12 midi_trigger.dsp
-//
-//
-// (from: https://ccrma.stanford.edu/~rmichon/faustTutorials)
+// midi-trigger.dsp
 //
 // Henrik von Coler
 // 2020-05-17
