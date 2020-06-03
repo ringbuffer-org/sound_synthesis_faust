@@ -31,8 +31,8 @@ loop(s, idx) = (idx, reader(s)) : outs(s)
         length(s) = idx,0 : s : _,si.block(outputs(s)-1);
         srate(s)  = idx,0 : s : !,_,si.block(outputs(s)-2);
 	
-		// the playback position (a recursive counter)
-		reader(s) = (speed * float(srate(s)))/ma.SR : (+,length(s):fmod)~  _ : wrap(length(s)) : int;
+	// the playback position (a recursive counter)
+	reader(s) = (speed * float(srate(s)))/ma.SR : (+,length(s):fmod)~  _ : wrap(length(s)) : int;
 
         // read from sample
         outs(s)   = s : si.block(2), si.bus(outputs(s)-2);
