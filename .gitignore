@@ -1,3 +1,5 @@
+*.json
+*/faust.*
 *.cpp
 *.tmp.dsp
 *.tmp-svg
