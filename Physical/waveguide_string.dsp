@@ -7,7 +7,6 @@
 // Henrik von Coler
 // 2020-06-09
 
-
 import("all.lib"); 
 
 // use '(pm.)l2s' to calculate number of samples
@@ -18,7 +17,6 @@ with{
     nMax = maxLength : l2s;
     n = length : l2s/2;
 };
-
 
 
 
@@ -35,11 +33,13 @@ idString(length,pos,excite) = endChain(wg)
 with{
 
     nUp   = length*pos;  
-
     nDown = length*(1-pos);  
 
     wg = chain(lt : segment(6,nUp) : in(excite) : out : segment(6,nDown) : rt); // waveguide chain
 };
 
-length = hslider("length",1,0.1,10,0.01);
-process = idString(length,0.15, button("pluck")) <: _,_;
+exc = select2(gain>0.9,1,0);
+
+length = hslider("length",1,0.1,10,0.01):si.smoo;
+
+process = idString(length,0.15, button("trigger")) <: _,_;
