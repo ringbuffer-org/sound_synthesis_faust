@@ -2,9 +2,8 @@
 //
 // Parameters
 // freq: set the frequency in Hz
-// reset: the phase is rest to 0 when going >= 0
-//
-// Todo: set trigger phase offset
+// reset: the phase is reset when going >= 0
+// offset: the phase value on reset
 //
 // HvC
 // 2020-08-30
@@ -21,7 +20,11 @@ ts =  1<<16; // size
 time = (+(1) ~ _ ) , 1 : - ; 
 sinewave =  ((float(time) / float(ts)) * twopi) : sin;
 
-phase = os.hs_phasor(ts,freq,trig);
+// the wrapper function keeps a signal above 0 and below m (max)
+wrapper(m,x) =  select2(x<=m, (x-m):max(0), x);
+
+// phase is used with offset and wrap
+phase = os.hs_phasor(ts,freq,trig) : +(off_trig*ts) : wrapper(ts);
 
 // read from table
 sin_osc( freq) = rdtable(ts ,sinewave , int(phase)) ;
@@ -29,9 +32,13 @@ sin_osc( freq) = rdtable(ts ,sinewave , int(phase)) ;
 // generate a one sample impulse from the gate
 trig =  pm.impulseExcitation(reset);
 
+// a number only changed when triggered 
+// this avoids glitches when changing offset during play
+off_trig = offset : ba.sAndH(trig);
+
+// all control variables
 reset = button ("reset");
 freq = hslider("freq", 100, 0, 16000, 0.00001);
-
-// offset = hslider("offset", 0, 0, 1, 0.00001);
+offset = hslider("offset", 0, 0, 1, 0.00001);
 
 process = sin_osc(freq);
