@@ -1,0 +1,144 @@
+.. title: Online Tools and Materials
+.. slug: sound_synthesis-introduction_1
+.. date: 2020-04-20 14:33:55 UTC
+.. tags: 
+.. category: faust:introduction
+.. link: 
+.. description: 
+.. type: text
+
+
+A collection of digital tools will be used to
+meet, share information, material and
+programming tutorials.
+Most services are password-protected.
+Please get in touch if you need the passwords.
+
+------
+
+Mailing List
+============
+
+Due to the current situation, the class will be held online. All relevant information will be distributed via a mailing list. Please subscribe to participate:
+
+https://lists.tu-berlin.de/mailman/listinfo/ak-synth2020 
+
+------
+
+Zoom
+====
+
+The seminar uses a Zoom meeting as virtual
+classroom for the weekly sessions. A password is required for accessing the meeting:
+
+`Link to Zoom meeting <https://tu-berlin.zoom.us/j/95426202501?pwd=M2hDNTljQyt4K3BXd2VmS2xITEw4UT09>`_
+
+
+------
+
+Downloads
+=========
+
+Papers, sound files and other content can
+be downloaded from a password-protected:
+
+`TUB Cloud directory <https://tubcloud.tu-berlin.de/s/15ciTqneMJ6Zdky>`_.
+
+
+
+------
+
+Faust Code
+==========
+
+The Faust project features a rich set of properly
+documented
+`examples <https://faust.grame.fr/doc/examples/>`_.
+Nevertheless, this class has an 
+`accompanying Git Repository <https://gitlab.tubit.tu-berlin.de/henrikvoncoler/sound_synthesis_faust>`_ for code snippets and small tutorials.
+
+------
+
+JupyterHub
+==========
+
+The class makes use of Jupyter Notebooks for illustrating details of
+synthesis algorithms and their components.
+
+**Repository**
+
+Jupyter files for the class are organized in a `Git Repository <https://gitlab.tubit.tu-berlin.de/henrikvoncoler/sound_synthesis_jupyter>`_.
+
+
+**Own Jupyterlab or Jupyternotebook Instance**
+
+You can install your own of instance of JupyterLab or JupyterNotebook,
+alongside the necessary libraries and use the examples from the
+repository. This is the recommended way:
+
+https://jupyter.org/
+
+
+**Using Binder**
+
+The repository can be used with an on line service like `Binder <https://mybinder.org/>`_.
+
+
+**Using the JupyterHub**
+
+Students can sign into a  `dedicated JupyterHub <https://jupyter.hvc.berlin>`_.
+This service might suffer from a large number of users.
+Follow the link and create a user accout,
+chosing the signup option:
+
+https://jupyter.hvc.berlin
+
+Your account will be activated within one day and
+you can log in, using the Login option.
+After logging in, write-protected example files are located in
+the following directory:
+
+::
+
+   share/sound_synthesis_static/sound_synthesis_jupyter
+
+**nbgitpuller**
+
+   
+To load the content of the repository to the dedicated JupyterHub,
+use this link: `nbgitpuller <https://jupyter.hvc.berlin/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgitlab.tubit.tu-berlin.de%2Fhenrikvoncoler%2Fsound_synthesis_jupyter&urlpath=tree%2Fsound_synthesis_jupyter%2F>`_
+
+The files will appear in a directory ``/sound_synthesis_jupyter``
+and can be edited.
+
+
+
+------
+
+Wiki
+====
+
+Participants can use this Wiki as a
+knowledge base for sharing examples and
+tutorials:
+
+http://wiki.hvc.berlin/
+
+Links
+=====
+
+There are a couple of links, which reappear as references
+in this lecture or can be used as additional resources.
+
+
+- `CCRMA website of Julius Smith <https://ccrma.stanford.edu/~jos/>`_
+
+- `Faust Tutorials by Romain Michon <https://ccrma.stanford.edu/~rmichon/faustTutorials/>`_
+
+------
+
+ISIS
+====
+
+TU students additionally enroll for the class via the ISIS system
+of the TU Berlin: `ISIS <https://isis.tu-berlin.de/course/view.php?id=19732>`_
