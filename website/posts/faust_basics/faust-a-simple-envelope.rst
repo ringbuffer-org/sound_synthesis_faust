@@ -6,7 +6,7 @@
 .. link:
 .. description:
 .. type: text
-.. priority: 3
+.. priority: 6
 
 
 Temporal envelopes are essential for many sound synthesis

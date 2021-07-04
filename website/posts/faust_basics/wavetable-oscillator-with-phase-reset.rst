@@ -6,7 +6,7 @@
 .. link:
 .. description:
 .. type: text
-.. priority: 1
+.. priority: 5
 
 
 The Faust *oscillators.lib* comes with many different

@@ -6,7 +6,7 @@
 .. link:
 .. description:
 .. type: text
-.. priority: 2
+.. priority: 3
 
 The ``select2()`` directive can be used as a
 switch condition with two cases, as shown in

@@ -10,4 +10,4 @@ freq  = hslider("frequency",100, 10, 1000, 0.001);
 gain  = hslider("gain[style:knob]",0.5, 0, 1, 0.001);
 
 // a sine oscillator with controllable freuency and aplitude:
-process = os.osc(freq):gain;  
+process = os.osc(freq)*gain;
