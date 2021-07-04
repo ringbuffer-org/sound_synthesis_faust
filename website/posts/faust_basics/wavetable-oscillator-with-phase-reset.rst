@@ -1,11 +1,12 @@
 .. title: Wavetable Oscillator with Phase Reset
 .. slug: wavetable-oscillator-with-phase-reset
 .. date: 2020-08-31 21:01:01 UTC
-.. tags: 
-.. category: faust:faust
-.. link: 
-.. description: 
+.. tags:
+.. category: faust:basics
+.. link:
+.. description:
 .. type: text
+.. priority: 1
 
 
 The Faust *oscillators.lib* comes with many different
@@ -29,7 +30,7 @@ The example is derived from Barkati et. al (2013) and part of the
 
 .. code-block:: cpp
 
-   import("stdfaust.lib");  
+   import("stdfaust.lib");
 
    // some basic stuff
    sr = SR;
@@ -37,7 +38,7 @@ The example is derived from Barkati et. al (2013) and part of the
 
    // define the waveform in table
    ts =  1<<16; // size = 65536 samples (max of unsigned short)
-   time = (+(1) ~ _ ) , 1 : - ; 
+   time = (+(1) ~ _ ) , 1 : - ;
    sinewave =  ((float(time) / float(ts)) * twopi) : sin;
 
    phase = os.hs_phasor(ts,freq,trig);

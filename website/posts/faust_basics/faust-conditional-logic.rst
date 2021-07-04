@@ -1,18 +1,19 @@
 .. title: Faust: Conditional Logic
 .. slug: faust-conditional-logic
 .. date: 2020-06-03 09:24:28 UTC
-.. tags: 
-.. category: faust:faust
-.. link: 
-.. description: 
+.. tags:
+.. category: faust:basics
+.. link:
+.. description:
 .. type: text
+.. priority: 2
 
 The ``select2()`` directive can be used as a
 switch condition with two cases, as shown in
 ``switch_example.dsp``
 
 .. code:: cpp
-	   
+
 	  // switch_example.dsp
 	  //
 	  //
@@ -27,4 +28,3 @@ switch condition with two cases, as shown in
 	  sel(l,x) = select2((x>=0), 0, 1);
 
 	  process = -0.1 : sel(2);
-   

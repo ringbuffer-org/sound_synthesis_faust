@@ -1,11 +1,12 @@
 .. title: Faust: A Simple Envelope
 .. slug: faust-a-simple-envelope
 .. date: 2020-05-07 09:27:37 UTC
-.. tags: 
-.. category: faust:faust
-.. link: 
-.. description: 
+.. tags:
+.. category: faust:basics
+.. link:
+.. description:
 .. type: text
+.. priority: 3
 
 
 Temporal envelopes are essential for many sound synthesis
@@ -28,7 +29,7 @@ https://faust.grame.fr/doc/libraries/#en.asr
 
    // envelope.dsp
    //
-   // A fixed frequency sine with 
+   // A fixed frequency sine with
    // a trigger and controllable release time.
    //
    // - mono (left channel only)

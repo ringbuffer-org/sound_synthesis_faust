@@ -8,17 +8,6 @@
 .. type: text
 
 
-A collection of digital tools will be used to
-meet, share information, material and
-programming tutorials.
-Most services are password-protected.
-Please get in touch if you need the passwords.
-
-
-
-
-------
-
 Faust Code
 ==========
 
@@ -26,7 +15,7 @@ The Faust project features a rich set of properly
 documented
 `examples <https://faust.grame.fr/doc/examples/>`_.
 Nevertheless, this class has an 
-`accompanying Git Repository <https://gitlab.tubit.tu-berlin.de/henrikvoncoler/sound_synthesis_faust>`_ for code snippets and small tutorials.
+`accompanying Git Repository <https://github.com/anwaldt/sound_synthesis_faust>`_ for code snippets and small tutorials.
 
 ------
 
@@ -41,10 +30,3 @@ in this lecture or can be used as additional resources.
 
 - `Faust Tutorials by Romain Michon <https://ccrma.stanford.edu/~rmichon/faustTutorials/>`_
 
-------
-
-ISIS
-====
-
-TU students additionally enroll for the class via the ISIS system
-of the TU Berlin: `ISIS <https://isis.tu-berlin.de/course/view.php?id=19732>`_
