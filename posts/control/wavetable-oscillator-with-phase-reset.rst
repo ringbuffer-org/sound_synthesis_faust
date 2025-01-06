@@ -2,7 +2,7 @@
 .. slug: wavetable-oscillator-with-phase-reset
 .. date: 2020-08-31 21:01:01 UTC
 .. tags:
-.. category: faust:basics
+.. category: faust:control
 .. link:
 .. description:
 .. type: text

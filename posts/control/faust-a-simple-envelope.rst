@@ -2,7 +2,7 @@
 .. slug: faust-a-simple-envelope
 .. date: 2020-05-07 09:27:37 UTC
 .. tags:
-.. category: faust:basics
+.. category: faust:control
 .. link:
 .. description:
 .. type: text

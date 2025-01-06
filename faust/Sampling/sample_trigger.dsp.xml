@@ -1,0 +1,65 @@
+
+<faust>
+	<name>sample_trigger</name>
+	<author></author>
+	<copyright></copyright>
+	<license></license>
+	<version></version>
+	<classname>mydsp</classname>
+	<inputs>0</inputs>
+	<outputs>2</outputs>
+	<meta key="filename">sample_trigger.dsp</meta>
+	<meta key="float.lib/name">Faust float Library</meta>
+	<meta key="float.lib/version">0.1</meta>
+	<meta key="maths.lib/author">GRAME</meta>
+	<meta key="maths.lib/copyright">GRAME</meta>
+	<meta key="maths.lib/license">LGPL with exception</meta>
+	<meta key="maths.lib/name">Faust Math Library</meta>
+	<meta key="maths.lib/version">2.1</meta>
+	<meta key="runtime.lib/name">Runtime Library</meta>
+	<meta key="runtime.lib/version">0.1</meta>
+	<meta key="signals.lib/name">Faust Signal Routing Library</meta>
+	<meta key="signals.lib/version">0.0</meta>
+	<meta key="soundfiles.lib/name">Faust Soundfile Library</meta>
+	<meta key="soundfiles.lib/version">0.6</meta>
+	<ui>
+		<activewidgets>
+			<count>4</count>
+			<widget type="button" id="1">
+				<label>bell</label>
+				<varname>fButton0</varname>
+			</widget>
+			<widget type="button" id="2">
+				<label>kick</label>
+				<varname>fButton1</varname>
+			</widget>
+			<widget type="nentry" id="3">
+				<label>label</label>
+				<varname>fSoundfile0</varname>
+				<meta key="url">{'../WAV/kick.wav'; '../WAV/cowbell.wav'; '../WAV/my_model.wav'}</meta>
+			</widget>
+			<widget type="hslider" id="4">
+				<label>level</label>
+				<varname>fHslider0</varname>
+				<init>1.0f</init>
+				<min>0.0f</min>
+				<max>2.0f</max>
+				<step>0.01f</step>
+			</widget>
+		</activewidgets>
+		
+		<passivewidgets>
+			<count>0</count>
+		</passivewidgets>
+		
+		<layout>
+			<group type="vgroup">
+				<label>0x00</label>
+				<widgetref id="1" />
+				<widgetref id="2" />
+				<widgetref id="3" />
+				<widgetref id="4" />
+			</group>
+		</layout>
+	</ui>
+</faust>

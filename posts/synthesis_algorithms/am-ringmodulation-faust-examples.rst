@@ -1,10 +1,10 @@
 .. title: AM & Ringmodulation: Faust Examples
 .. slug: am-ringmodulation-faust-examples
 .. date: 2020-05-12 17:43:57 UTC
-.. tags: 
+.. tags:
 .. category: faust:am-ringmod
-.. link: 
-.. description: 
+.. link:
+.. description:
 .. type: text
 
 
@@ -41,7 +41,7 @@ sine wave of adjustable frequency.
 
     am(x, fm) =  (1-mix) * x  +  mix * x *  os.osc(fm);
 
-    process(x) =     am(x,f_m) <: _,_;		
+    process(x) =     am(x,f_m) <: _,_;
 
 
 AM - Ringmod Explorer
@@ -57,7 +57,7 @@ between AM and Ringmodulation audible.
 
 		// am-ringmod.dsp
 		//
-		// Example for amplitude modulation 
+		// Example for amplitude modulation
 		// and ringmodulation.
 		//
 		// - steady sound
@@ -68,7 +68,7 @@ between AM and Ringmodulation audible.
 		// 2020-05-11
 
 		import("stdfaust.lib");
-		
+
 		f_x = hslider("Signal Frequency",100,0.01,1000,0.1);
 		f_m = hslider("Modulator Frequency",100,0.01,1000,0.1);
 
@@ -76,6 +76,6 @@ between AM and Ringmodulation audible.
 
 
 		am(fx, fm) = os.osc(fx) * ((1-m_off) * os.osc(fm) + m_off);
-		
+
 
 		process =  am(f_x,f_m) <: _,_;

@@ -9,7 +9,7 @@
 
 import("all.lib"); 
 
-// use '(pm.)l2s' to calculate number of samples
+// use '(pm.)l2s' to calculate number of samples 
 // from length in meters:
 
 segment(maxLength,length) = waveguide(nMax,n)
@@ -25,7 +25,7 @@ fc = hslider("lowpass",1000,10,10000,1);
 rt = rTermination(basicBlock,*(-1) : si.smooth(1.0-2*(fc/ma.SR)));
 
 // one gain terminator with control
-gain = hslider("gain",0.99,0,1,0.01);
+gain = hslider("gain",0.5,0,1,0.01);
 lt = lTermination(*(-1)* gain,basicBlock);
 
 // a simple allpass (Smith Paper)
